@@ -1,0 +1,343 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <title>avangard art</title>
+</head>
+<body>
+  <div class="header header-section">
+    <div class="container">
+      <div class="header-inner">
+        <div class="logo">
+          <a href="#">
+            <img src="../avangard art/images/logo.png" alt="">
+          </a>
+        </div>
+        <nav class="main-nav">
+          <ul class="main-list">
+            <li class="list">
+              <a class="list-item" href="#" onclick="scrollToSection('section1')">Главная</a>
+            </li>
+            <li class="list">
+              <a class="list-item" href="#" onclick="scrollToSection('section3')">Портфолио</a>
+            </li>
+            <li class="list">
+              <a class="list-item" href="#" onclick="scrollToSection('section2')">О нас</a>
+            </li>
+            <li class="list">
+              <a class="list-item" href="#" onclick="scrollToSection('footer')">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="call">
+          <a class="call-btn" href="tel:+971551600788">+971 551 600 788</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-section" id="section1">
+    <h1 class="main-title">Студия дизайна интерьера AVANGARD.ART</h1>
+    <p class="title">
+      Студия дизайна интерьера AVANGARD.ART в Дубае – это сочетание стиля и индивидуальности. Наша команда тщательно 
+      и с особым вниманием разрабатывает неповторимые проекты в ритме современной жизни, которые обеспечивают функциональность,
+      эстетику и комфорт для наших заказчиков.
+    </p>
+  </div>
+
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img class="main-img" src="../avangard art/images/main-img.jpg" alt="" style="width:100%">
+      </div>
+      <div class="swiper-slide">
+        <img class="main-img" src="../avangard art/images/main-img-2.jpg" alt="" style="width:100%">
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>  
+
+  <div class="section-2" id="section2">
+    <div class="container">
+      <h3 class="description-title">Описание</h3>
+      <p class="description-text">Результат работы нашей студии – идеальный интерьер, созданный в полном соответствии с вашими ожиданиями.</p>
+
+      <p class="description-text">Мы умеем воплощать в жизнь интересные идеи, находить новые смыслы в самых простых вещах. Благодаря этому 
+        у проектов студии Avangard art interiors, есть особая атмосфера, пронизывающая пространство и проникающая 
+        во все сферы жизни. Безупречный стиль, отраженный в готовом дизайне интерьера, будет сопровождать вас 
+        везде, где бы вы ни находились.</p>
+
+      <p class="description-text">Именно это и является нашей задачей: мы не просто разрабатываем дизайн-проекты, 
+        но еще и способствуем достижению ваших глобальных целей.</p>
+
+      <p class="description-text">Это работает очень просто: когда вы полностью довольны своим домом и бытом, а поддержание 
+        первозданного облика интерьера не требует много сил – освобождается множество ресурсов, 
+        которые можно направить на решение самых важных задач.</p>
+
+      <p class="description-text">Поэтому при разработке дизайна интерьера ключевым приоритетом для нас является функциональность. 
+        Внимание к потребностям каждого члена семьи, строгое соблюдение правил эргономики, тщательная 
+        проработка деталей – совокупность этих факторов является основой для создания по-настоящему 
+        комфортного жилья.</p>
+      
+    </div>
+  </div>
+
+  <div class="section-3" id="section3">
+    <h3 class="section-3-title">Портфолио</h3>
+
+    <div class="portfolio">
+      <div class="photo" onclick="openModal('modal1')">
+          <img src="./images/image-1.jpg" alt="Photo 1">
+      </div>
+      <div class="photo" onclick="openModal('modal2')">
+          <img src="./images/image-2.jpg" alt="Photo 2">
+      </div>
+      <div class="photo" onclick="openModal('modal3')">
+        <img src="./images/image-3.jpg" alt="Photo 3">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-4.jpg" alt="Photo 4">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-5.jpg" alt="Photo 4">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-6.jpg" alt="Photo 5">
+      </div>
+      <div class="photo" onclick="openModal('modal1')">
+        <img src="./images/image-7.jpg" alt="Photo 6">
+      </div>
+      <div class="photo" onclick="openModal('modal2')">
+        <img src="./images/image-8.jpg" alt="Photo 7">
+      </div>
+      <div class="photo" onclick="openModal('modal3')">
+        <img src="./images/image-9.jpg" alt="Photo 8">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-10.jpg" alt="Photo 9">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-11.jpg" alt="Photo 10">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-12.jpg" alt="Photo 11">
+      </div>
+      <div class="photo" onclick="openModal('modal1')">
+        <img src="./images/image-13.jpg" alt="Photo 1">
+      </div>
+      <div class="photo" onclick="openModal('modal2')">
+          <img src="./images/image-14.jpg" alt="Photo 2">
+      </div>
+      <div class="photo" onclick="openModal('modal3')">
+        <img src="./images/image-15.jpg" alt="Photo 3">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-16.jpg" alt="Photo 4">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+       <img src="./images/image-17.jpg" alt="Photo 4">
+     </div>
+     <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-18.jpg" alt="Photo 5">
+      </div>
+      <div class="photo" onclick="openModal('modal1')">
+        <img src="./images/image-19.jpg" alt="Photo 6">
+      </div>
+      <div class="photo" onclick="openModal('modal2')">
+        <img src="./images/image-20.jpg" alt="Photo 7">
+      </div>
+      <div class="photo" onclick="openModal('modal3')">
+        <img src="./images/image-21.jpg" alt="Photo 8">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-22.jpg" alt="Photo 9">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+      <img src="./images/image-23.jpg" alt="Photo 10">
+    </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-24.jpg" alt="Photo 11">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-25.jpg" alt="Photo 9">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-26.jpg" alt="Photo 10">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-27.jpg" alt="Photo 11">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-28.jpg" alt="Photo 9">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-29.jpg" alt="Photo 10">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-30.jpg" alt="Photo 11">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-31.jpg" alt="Photo 9">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-32.jpg" alt="Photo 10">
+      </div>
+      <div class="photo" onclick="openModal('modal4')">
+        <img src="./images/image-33.jpg" alt="Photo 11">
+      </div>
+    </div>
+
+    <div id="modal1" class="modal">
+      <span class="close" onclick="closeModal('modal1')">&times;</span>
+      <div class="modal-content">
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+          <img src="./images/image-1.jpg" alt="Photo 1">
+          <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <div class="modal-content">
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+          <img src="./images/image-1.jpg" alt="Photo 2">
+          <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+    </div>
+    <div id="modal3" class="modal">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <div class="modal-content">
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+          <img src="./images/image-1.jpg" alt="Photo 2">
+          <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+    </div>
+    <div id="modal2" class="modal">
+      <span class="close" onclick="closeModal('modal2')">&times;</span>
+      <div class="modal-content">
+          <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+          <img src="./images/image-1.jpg" alt="Photo 2">
+          <button class="next" onclick="plusSlides(1)">&#10095;</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-4">
+    <div class="container">
+      <h3 class="section-4-title">Наши услуги</h3>
+      <div class="service">
+        <h5 class="service-title">Дизайн-проект</h5>
+        <p class="description-text">Мы создаем функциональные, качественные и современные интерьеры, соответствующие всем требованиям заказчика. <br>
+          Дизайн-проект включает в себя планировочное решение с расстановкой мебели, 3d-визуализации, полный набор чертежей, 
+          необходимых для воплощения интерьера. А так же спецификацию на все используемые чистовые материалы и и комплектующие 
+          с указанием артикулов.</p>
+
+          <h5 class="service-title">Авторский надзор</h5>
+        <p class="description-text">Авторский надзор — это процесс непрерывного контроля автора проекта за реализацией. Дизайнер выезжает на объект, 
+          и при необходимости решает другие задачи, возникающие в хоре ремонта.</p>
+
+          <h5 class="service-title">Сопровождение строительства с комплектацией</h5>
+        <p class="description-text">Это услуга включает в себя Авторский надзор, а так же весь комплекс мероприятий по закупкам всего необходимого 
+          для реализации проекта. Команда студии берет на себя работу по обеспечению объекта всеми чистовыми материалами, 
+          мебелью и оборудованием под ключ, что значительно сокращает время на подбор и приобретение товаров и положительно 
+          сказывается на общем сроке реализации объекта.</p>
+
+          <h5 class="service-title">Декорирование</h5>
+        <p class="description-text">Декорирование — это завершающий этап реализации вашего интерьера, включающий подбор текстиля, картин, 
+          элементов декора.</p>
+
+          <h5 class="service-title">Отделочные работы</h5>
+        <p class="description-text">Разработка дизайна интерьера и последующий ремонт выполняется в комплексе. Такой подход позволяет избежать 
+          лишних трат, грамотно согласовать все процессы и четко распределить обязанности между подрядчиками.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="section-5">
+    <div class="container">
+      <h3 class="section-4-title">Подробности процесса работы</h3>
+      <div class="steps">
+        <div class="step">
+          <h5 class="step-title">шаг №1</h5>
+          <img src="./images/step-1.png" alt="">
+          <p class="step-text">Оставьте заявку</p>
+          <p class="step-description">Наш менеджер свяжется с вами</p>
+        </div>
+
+        <div class="step">
+          <h5 class="step-title">шаг №2</h5>
+          <img src="./images/step-2.png" alt="">
+          <p class="step-text">Договор</p>
+          <p class="step-description">Составляем договор с выгодными условиями</p>
+        </div>
+
+        <div class="step">
+          <h5 class="step-title">шаг №3</h5>
+          <img src="./images/step-3.png" alt="">
+          <p class="step-text">Замер и ТЗ</p>
+          <p class="step-description">Дизайнер делает замеры, составление ТЗ</p>
+        </div>
+
+        <div class="step">
+          <h5 class="step-title">шаг №4</h5>
+          <img src="./images/step-4.png" alt="">
+          <p class="step-text">Планировка</p>
+          <p class="step-description">Разрабатываем варианты планировки</p>
+        </div>
+
+        <div class="step">
+          <h5 class="step-title">шаг №5</h5>
+          <img src="./images/step-5.png" alt="">
+          <p class="step-text">Визуализация</p>
+          <p class="step-description">Создаем максимально реалистичное изображение будущего материала</p>
+        </div>
+
+        <div class="step">
+          <h5 class="step-title">шаг №6</h5>
+          <img src="./images/step-6.png" alt="">
+          <p class="step-text">Расчет материала</p>
+          <p class="step-description">Расчитываем точное количество отделочных материалов</p>
+        </div>
+
+        <div class="step">
+          <h5 class="step-title">шаг №7</h5>
+          <img src="./images/step-7.png" alt="">
+          <p class="step-text">Расчет отделки</p>
+          <p class="step-description">Предлагаем лучшие варианты по стоимости ремонта</p>
+        </div>
+
+        <div class="step">
+          <h5 class="step-title">шаг №8</h5>
+          <img src="./images/step-8.png" alt="">
+          <p class="step-text">Начало ремонта</p>
+          <p class="step-description">Приступаем к ремонту согласно дизайн-проекта</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" id="footer">
+    <div class="container">
+      <h3 class="footer-title">Оставить заявку</h3>
+      <div class="application">
+        <input class="footer-input" type="text" id="name" name="name" placeholder="Ваше имя...">
+        <input class="footer-input" type="text" id="email" name="email" placeholder="Ваш E-mail...">
+        <input class="footer-input" type="text" id="number" name="number" placeholder="Номер телефона...">
+        <button class="footer-btn">Отправить заявку</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

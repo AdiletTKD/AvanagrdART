@@ -1,0 +1,68 @@
+
+.main-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 32px;
+}
+
+.title {
+    margin: 0 auto 65px;
+    text-align: center;
+    width: 669px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+.main-img {
+    position: relative;
+    display: block;
+    margin-bottom: 0 auto;
+    max-width: 100%;
+    height: auto;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .main-img {
+      width: 100%;
+    }
+  }
+  
+  .swiper-container {
+    width: 100%;
+    position: relative;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+  }
+
+  .swiper-pagination {
+    color: white;
+    position: absolute;
+    bottom: 10px; 
+    left: 0;
+    width: 100%;
+    text-align: center;
+    z-index: 10;
+  }
+
+  .swiper-pagination-bullet {
+    background: white; /* Цвет точек */
+  }
+  
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: white; /* Цвет кнопок */
+  }
+  
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 20px; /* Размер иконок кнопок */
+    color: white; /* Цвет иконок кнопок */
+  }
+

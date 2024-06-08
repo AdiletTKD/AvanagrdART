@@ -1,0 +1,58 @@
+.header {
+    margin-top: 0;
+    background-color: #fff;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+    margin-bottom: 65px;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 0;
+}
+
+.main-nav {
+    display: flex;
+    position: relative;
+}
+
+.main-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list {
+    margin-left: 32px;
+}
+
+.list-item {
+    text-decoration: none;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.list-item:hover {
+    font-weight: bold;
+    border-top: 4px solid #000;
+    padding-top: 5px;
+    transition-duration: 0.2s;
+}
+
+.call-btn {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+
+.call-btn::before {
+    content: '';
+    position: absolute;
+    background: url(../images/phone.png) center no-repeat;
+    width: 20px;
+    height: 20px;
+    top: 2px;
+    left: -25px;
+}

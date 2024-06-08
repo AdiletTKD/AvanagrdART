@@ -1,0 +1,367 @@
+@charset "UTF-8";
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 18px;
+  line-height: 19px;
+  font-weight: 500;
+  color: #181818;
+  background: #fff;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.container {
+  max-width: 1138px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-top: 0;
+  background-color: #fff;
+  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+  margin-bottom: 65px;
+}
+
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 28px 0;
+}
+
+.main-nav {
+  display: flex;
+}
+
+.main-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list {
+  margin-left: 32px;
+}
+
+.list-item {
+  text-decoration: none;
+  color: #000;
+  text-transform: uppercase;
+}
+
+.list-item:hover {
+  font-weight: bold;
+  border-top: 4px solid #000;
+  padding-top: 5px;
+  transition-duration: 0.2s;
+}
+
+.call-btn {
+  text-decoration: none;
+  color: #000;
+  position: relative;
+}
+
+.call-btn::before {
+  content: "";
+  position: absolute;
+  background: url(../images/phone.png) center no-repeat;
+  width: 20px;
+  height: 20px;
+  top: 2px;
+  left: -25px;
+}
+
+.main-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 32px;
+}
+
+.title {
+  margin: 0 auto 65px;
+  text-align: center;
+  width: 669px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.main-img {
+  position: relative;
+  display: block;
+  margin-bottom: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+@media screen and (min-width: 768px) {
+  .main-img {
+    width: 100%;
+  }
+}
+.swiper-container {
+  width: 100%;
+  position: relative;
+}
+
+.swiper-slide {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.swiper-pagination {
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet {
+  background: white; /* Цвет точек */
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: white; /* Цвет кнопок */
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  font-size: 20px; /* Размер иконок кнопок */
+  color: white; /* Цвет иконок кнопок */
+}
+
+.section-2 {
+  margin-bottom: 65px;
+}
+
+.description-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.description-text {
+  font-weight: 400;
+  text-align: left;
+}
+
+.description-img {
+  max-height: 115px;
+}
+
+.section-3 {
+  margin-bottom: 100px;
+}
+
+.section-3-title {
+  text-align: center;
+  background-color: darkgrey;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: 400;
+  font-size: 32px;
+  padding: 46px 0;
+}
+
+.portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.photo {
+  position: relative;
+  margin: 5px;
+  width: 463px;
+  height: 450px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.photo::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0);
+  z-index: 1;
+  transition: background-color 0.5s ease;
+}
+
+.photo:hover::before {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 50px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+.close {
+  color: #fff;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+.close:hover,
+.close:focus {
+  color: #ccc;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.section-4 {
+  margin-bottom: 100px;
+}
+
+.section-4-title {
+  text-align: center;
+  font-weight: 500;
+  font-size: 37px;
+  margin-bottom: 65px;
+}
+
+.service {
+  text-align: center;
+}
+
+.service p {
+  text-align: center;
+}
+
+.service-title {
+  font-size: 21px;
+  font-weight: 500;
+  padding-bottom: 0;
+  margin: 30px;
+}
+
+.section-5 {
+  margin-bottom: 100px;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.step {
+  text-align: center;
+  max-width: 236px;
+}
+
+.step-title {
+  text-transform: uppercase;
+  font-size: 26px;
+}
+
+.step-text {
+  text-transform: uppercase;
+}
+
+.step-description {
+  font-weight: 300;
+  font-size: 16px;
+}
+
+.footer {
+  border-top: 2px solid #000;
+  margin-bottom: 100px;
+}
+
+.footer-title {
+  text-align: center;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.application {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 20px 100px 20px 20px;
+  border-radius: 10px;
+}
+
+.footer-btn {
+  display: inline-block;
+  padding: 20px 60px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+  background-color: #3498db;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.footer::before,
+.footer-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0; /* Располагаем псевдоэлемент внизу кнопки */
+  left: 50%;
+  width: 100%;
+  height: 0; /* Начальная высота нулевая */
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  transition: all 0.5s ease;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.footer-btn:hover::before {
+  height: 100%; /* Увеличиваем высоту до 100%, чтобы создать эффект волны */
+}

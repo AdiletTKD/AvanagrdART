@@ -1,0 +1,21 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 19px;
+    font-weight: 500;
+    color: #181818;
+    background: #fff;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.container {
+    max-width: 1138px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+

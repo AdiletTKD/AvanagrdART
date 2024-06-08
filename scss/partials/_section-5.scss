@@ -1,0 +1,29 @@
+.section-5 {
+    margin-bottom: 100px;
+}
+
+.steps { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.step {
+    text-align: center;
+    max-width: 236px;
+}
+
+.step-title {
+    text-transform: uppercase;
+    font-size: 26px;
+}
+
+.step-text {
+    text-transform: uppercase;
+}
+
+.step-description {
+    font-weight: 300;
+    font-size: 16px;
+}
