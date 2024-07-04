@@ -18,3 +18,8 @@
     max-height: 115px;
 }
 
+@media (max-width: 480px) {
+    .description-title {
+      font-size: 24px;
+    }
+  }

@@ -66,3 +66,18 @@
     color: white; /* Цвет иконок кнопок */
   }
 
+  @media (max-width: 1024px) {
+    .title {
+      width: auto;
+    }
+}
+
+@media (max-width: 480px) {
+  .main-title {
+    font-size: 24px;
+  }
+  
+  .title {
+    font-size: 14px;
+  }
+}

@@ -56,3 +56,19 @@
     top: 2px;
     left: -25px;
 }
+
+@media (max-width: 1024px) {
+    .header-inner {
+        flex-direction: column;
+    }
+
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .list {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}

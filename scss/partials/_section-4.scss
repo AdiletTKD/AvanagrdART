@@ -23,3 +23,19 @@
     padding-bottom: 0;
     margin: 30px;
 }
+
+@media (max-width: 768px) {
+    .service-title {
+        font-size: 18px;
+    }
+
+    .section-4-title {
+        font-size: 28px;
+    } 
+}
+
+@media (max-width: 480px) {
+    .section-4-title {
+      font-size: 24px;
+    }
+  }

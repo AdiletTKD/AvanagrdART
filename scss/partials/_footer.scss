@@ -53,3 +53,9 @@
     height: 100%; /* Увеличиваем высоту до 100%, чтобы создать эффект волны */
 }
 
+@media (max-width: 768px) {
+    .footer-input {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
