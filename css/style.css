@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body {
   font-family: "Montserrat", sans-serif;
   font-size: 18px;
@@ -57,7 +56,6 @@ body {
 }
 
 .list-item:hover {
-  font-weight: bold;
   border-top: 4px solid #000;
   padding-top: 5px;
   transition-duration: 0.2s;
@@ -95,10 +93,9 @@ body {
     margin-left: 20px;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .list-item {
     font-size: 14px;
-    font-weight: bold;
   }
 }
 .main-title {
@@ -158,18 +155,18 @@ body {
 }
 
 .swiper-pagination-bullet {
-  background: white; /* Цвет точек */
+  background: white;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: white; /* Цвет кнопок */
+  color: white;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  font-size: 20px; /* Размер иконок кнопок */
-  color: white; /* Цвет иконок кнопок */
+  font-size: 20px;
+  color: white;
 }
 
 @media (max-width: 1024px) {
@@ -192,10 +189,15 @@ body {
     display: flex;
   }
 }
+@media (max-width: 768px) {
+  .main-title {
+    line-height: 1.3;
+  }
+}
 @media (max-width: 480px) {
   .main-title {
     font-size: 24px;
-    padding-bottom: 5px;
+    line-height: 1.3;
   }
   .title {
     font-size: 14px;
@@ -235,7 +237,7 @@ body {
 
 .section-3-title {
   text-align: center;
-  background-color: darkgrey;
+  background-color: #000;
   text-transform: uppercase;
   color: #fff;
   font-weight: 400;
@@ -258,6 +260,30 @@ body {
   cursor: pointer;
 }
 
+.reveal {
+  overflow: hidden;
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: transform 1s ease-out, opacity 1s ease-out;
+  opacity: 0;
+}
+
+.reveal.is-visible {
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.photo:hover img {
+  transform: scale(1.1);
+}
+
 .photo::before {
   content: "";
   position: absolute;
@@ -272,18 +298,6 @@ body {
 
 .photo:hover::before {
   background-color: rgba(0, 0, 0, 0.5);
-}
-
-.photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 2;
-  transition: transform 0.3s ease;
-}
-
-.photo:hover img {
-  transform: scale(1.1);
 }
 
 .modal {
@@ -429,8 +443,11 @@ body {
     width: 45%;
     margin: 10px 0;
   }
+  .step-title {
+    font-size: 18px;
+  }
   .step img {
-    width: 80px;
+    width: 40px;
     height: auto;
   }
 }
@@ -474,10 +491,10 @@ body {
 .footer-btn::before {
   content: "";
   position: absolute;
-  bottom: 0; /* Располагаем псевдоэлемент внизу кнопки */
+  bottom: 0;
   left: 50%;
   width: 100%;
-  height: 0; /* Начальная высота нулевая */
+  height: 0;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 50%;
   transition: all 0.5s ease;
@@ -486,7 +503,7 @@ body {
 }
 
 .footer-btn:hover::before {
-  height: 100%; /* Увеличиваем высоту до 100%, чтобы создать эффект волны */
+  height: 100%;
 }
 
 @media (max-width: 1024px) {
@@ -498,5 +515,8 @@ body {
   .footer-input {
     width: 100%;
     margin-bottom: 10px;
+  }
+  .footer {
+    border: none;
   }
 }

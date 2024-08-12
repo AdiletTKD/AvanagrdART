@@ -58,18 +58,18 @@
   }
 
   .swiper-pagination-bullet {
-    background: white; /* Цвет точек */
+    background: white; 
   }
   
   .swiper-button-next,
   .swiper-button-prev {
-    color: white; /* Цвет кнопок */
+    color: white;
   }
   
   .swiper-button-next::after,
   .swiper-button-prev::after {
-    font-size: 20px; /* Размер иконок кнопок */
-    color: white; /* Цвет иконок кнопок */
+    font-size: 20px; 
+    color: white; 
   }
 
   @media (max-width: 1024px) {
@@ -97,10 +97,16 @@
   }
 }
 
+@media (max-width: 768px) {
+  .main-title {
+    line-height: 1.3;
+  }
+}
+
 @media (max-width: 480px) {
   .main-title {
     font-size: 24px;
-    padding-bottom: 5px;
+    line-height: 1.3;
   }
   
   .title {

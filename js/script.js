@@ -55,3 +55,25 @@ function scrollToSection(sectionId) {
   section.scrollIntoView({ behavior: 'smooth' });
 }
 
+document.addEventListener("DOMContentLoaded", function() {
+  const photos = document.querySelectorAll('.reveal');
+
+  const options = {
+      threshold: 0.1
+  };
+
+  const observer = new IntersectionObserver(function(entries) {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              entry.target.classList.add('is-visible');
+          } else {
+              entry.target.classList.remove('is-visible');
+          }
+      });
+  }, options);
+
+  photos.forEach(photo => {
+      observer.observe(photo);
+  });
+});
+

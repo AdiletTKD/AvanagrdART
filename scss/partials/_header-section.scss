@@ -35,7 +35,6 @@
 }
 
 .list-item:hover {
-    font-weight: bold;
     border-top: 4px solid #000;
     padding-top: 5px;
     transition-duration: 0.2s;
@@ -77,11 +76,11 @@
     }
 }
 
-
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .list-item {
         font-size: 14px;
-        font-weight: bold;
     }
 }
+
+
 
